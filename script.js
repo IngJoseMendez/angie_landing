@@ -184,7 +184,6 @@ document.addEventListener("DOMContentLoaded", function () {
         `Hola Angie 👋 Mi nombre es *${nombre}*.\n` +
         `Me interesa una sesión de *${terapia}* ` +
         `para el *${fechaFormateada}*.\n` +
-        `Mi número es: ${telefono}` +
         (mensaje ? `\n\nNota: ${mensaje}` : "")
       );
 
