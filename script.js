@@ -17,8 +17,8 @@
 // ============================================
 // CONFIGURACIÓN — REEMPLAZAR ESTOS VALORES
 // ============================================
-const WEBHOOK_N8N = "https://n8n-production-447d.up.railway.app/webhook/landing";
-const WHATSAPP_NUMBER = "15551833395";
+const WEBHOOK_N8N = "https://n8n-production-efec.up.railway.app/webhook/landing";
+const WHATSAPP_NUMBER = "3127059247";
 // ============================================
 
 document.addEventListener("DOMContentLoaded", function () {
