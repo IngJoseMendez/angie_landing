@@ -987,6 +987,14 @@ button { font-family: var(--ff); cursor: pointer; }
 }
 .footer-ig:hover { color: var(--teal); }
 
+.footer-privacy {
+  font-size: 0.76rem;
+  color: var(--text-soft);
+  transition: color var(--t);
+  border-bottom: 1px solid transparent;
+}
+.footer-privacy:hover { color: var(--teal); border-color: var(--teal); }
+
 .footer-copy {
   font-size: 0.72rem;
   color: var(--text-xsoft);
