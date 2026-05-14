@@ -7,6 +7,48 @@ document.addEventListener("DOMContentLoaded", function () {
   const hoy = new Date().toISOString().split("T")[0];
   document.getElementById("fecha").setAttribute("min", hoy);
 
+  // ── Scroll-reveal ──
+  const observer = new IntersectionObserver(
+    (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("visible"); observer.unobserve(e.target); } }),
+    { threshold: 0.12 }
+  );
+  document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+  // ── Animated counters ──
+  const counterObserver = new IntersectionObserver(
+    (entries) => entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      const el     = e.target;
+      const target = parseInt(el.dataset.target, 10);
+      const dur    = 1200;
+      const start  = performance.now();
+      const tick   = (now) => {
+        const elapsed = Math.min(now - start, dur);
+        const val     = Math.round((elapsed / dur) * target);
+        el.textContent = val;
+        if (elapsed < dur) requestAnimationFrame(tick);
+        else el.textContent = target;
+      };
+      requestAnimationFrame(tick);
+      counterObserver.unobserve(el);
+    }),
+    { threshold: 0.5 }
+  );
+  document.querySelectorAll(".stat-num[data-target]").forEach((el) => counterObserver.observe(el));
+
+  // ── Scroll-to-form links ──
+  document.querySelectorAll(".scroll-to-form").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const form = document.getElementById("hero");
+      if (form) form.scrollIntoView({ behavior: "smooth", block: "start" });
+      setTimeout(() => {
+        const nombre = document.getElementById("nombre");
+        if (nombre) nombre.focus();
+      }, 500);
+    });
+  });
+
   // ── Validation helpers ──
   function setError(id, msg) {
     const el = document.getElementById(id);
@@ -57,9 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Clear errors on blur
   ["nombre", "telefono", "terapia", "fecha"].forEach((id) => {
     const el = document.getElementById(id);
-    const revalidate = () => {
-      if (el.classList.contains("input-error")) validateField(id);
-    };
+    const revalidate = () => { if (el.classList.contains("input-error")) validateField(id); };
     el.addEventListener("blur", () => validateField(id));
     el.addEventListener("input", revalidate);
     el.addEventListener("change", revalidate);

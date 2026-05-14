@@ -10,36 +10,42 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <!-- HEADER -->
+  <!-- ── HEADER ── -->
   <header class="header">
     <div class="container header-inner">
       <div class="brand">
         <div class="brand-mark" aria-hidden="true">AD</div>
         <span class="brand-name">Consultorio Angie Domínguez</span>
       </div>
+      <nav class="header-nav" aria-label="Secciones">
+        <a href="#proceso">¿Cómo funciona?</a>
+        <a href="#terapias">Terapias</a>
+        <a href="#testimonios">Testimonios</a>
+      </nav>
       <a href="tel:+573127071743" class="header-tel">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path
-            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.94-.94a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
         </svg>
-        +57 312 707 1743
+        <span>+57 312 707 1743</span>
       </a>
     </div>
   </header>
 
-  <!-- HERO -->
-  <main class="hero">
+  <!-- ── HERO ── -->
+  <main class="hero" id="hero">
     <div class="container hero-inner">
 
-      <!-- FORM (first on mobile via order) -->
+      <!-- FORM — primero en mobile -->
       <div class="hero-form-col">
         <div class="form-card">
 
@@ -50,11 +56,11 @@
 
           <div class="form-trust">
             <span class="trust-stars" aria-label="5 estrellas">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             </span>
             <span class="trust-text">+500 pacientes satisfechos</span>
           </div>
@@ -86,8 +92,7 @@
                   <option value="Cauterización de verrugas">Cauterización de verrugas</option>
                 </select>
                 <svg class="select-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  aria-hidden="true">
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <polyline points="6 9 12 15 18 9" />
                 </svg>
               </div>
@@ -106,8 +111,7 @@
 
             <button type="submit" id="btn-agendar" class="btn-submit">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
               </svg>
               Agendar por WhatsApp
             </button>
@@ -125,7 +129,7 @@
         </div>
       </div>
 
-      <!-- COPY (second on mobile) -->
+      <!-- COPY -->
       <div class="hero-copy-col">
         <p class="hero-location">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -148,30 +152,22 @@
         <ul class="benefits-list">
           <li>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             Atención 100% personalizada
           </li>
           <li>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             Insumos estériles de un solo uso
           </li>
           <li>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             Certificaciones internacionales
           </li>
           <li>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <polyline points="20 6 9 17 4 12" />
-            </svg>
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             Resultados comprobados en +500 pacientes
           </li>
         </ul>
@@ -191,19 +187,384 @@
     </div>
   </main>
 
-  <!-- FOOTER -->
+  <!-- ── STATS BAND ── -->
+  <section class="stats-band" aria-label="Nuestros números">
+    <div class="container stats-inner">
+      <div class="stat-item reveal">
+        <div class="stat-val">
+          <b class="stat-num" data-target="500">0</b><span class="stat-plus">+</span>
+        </div>
+        <span class="stat-lbl">Pacientes atendidos</span>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat-item reveal delay-1">
+        <div class="stat-val"><b class="stat-num">7</b></div>
+        <span class="stat-lbl">Terapias especializadas</span>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat-item reveal delay-2">
+        <div class="stat-val">
+          <b class="stat-num" data-target="3">0</b><span class="stat-plus">+</span>
+        </div>
+        <span class="stat-lbl">Años de experiencia</span>
+      </div>
+      <div class="stat-sep" aria-hidden="true"></div>
+      <div class="stat-item reveal delay-3">
+        <div class="stat-val"><b class="stat-num">&lt;1h</b></div>
+        <span class="stat-lbl">Tiempo de respuesta</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CÓMO FUNCIONA ── -->
+  <section class="section-process" id="proceso">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-lbl">Simple y rápido</span>
+        <h2 class="section-title">¿Cómo funciona?</h2>
+        <p class="section-desc">Desde que llenas el formulario hasta tu tratamiento, todo es sencillo y sin esperas</p>
+      </div>
+
+      <div class="process-row">
+
+        <div class="process-step reveal">
+          <div class="step-num" aria-hidden="true">1</div>
+          <div class="step-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+          </div>
+          <h3>Agenda en 2 minutos</h3>
+          <p>Llena el formulario con tu nombre, WhatsApp, terapia y fecha preferida. Completamente gratuito.</p>
+        </div>
+
+        <div class="step-connector" aria-hidden="true"></div>
+
+        <div class="process-step reveal delay-1">
+          <div class="step-num" aria-hidden="true">2</div>
+          <div class="step-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+          </div>
+          <h3>Te contactamos</h3>
+          <p>Angie te escribe por WhatsApp en menos de 1 hora para confirmar tu cita y resolver cualquier duda.</p>
+        </div>
+
+        <div class="step-connector" aria-hidden="true"></div>
+
+        <div class="process-step reveal delay-2">
+          <div class="step-num" aria-hidden="true">3</div>
+          <div class="step-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <h3>Recibe tu terapia</h3>
+          <p>Ven al consultorio y recibe tu tratamiento personalizado con insumos estériles en un ambiente seguro.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TERAPIAS ── -->
+  <section class="section-terapias" id="terapias">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-lbl">Nuestras terapias</span>
+        <h2 class="section-title">Tratamientos especializados</h2>
+        <p class="section-desc">Protocolos personalizados con tecnología de vanguardia e insumos clínicos de calidad</p>
+      </div>
+
+      <div class="terapias-grid">
+
+        <div class="terapia-card reveal" style="--c:#0D9488;--cb:rgba(13,148,136,.08)">
+          <div class="terapia-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 6v4M16 10l2.8 2.8M32 10l-2.8 2.8"/>
+              <path d="M24 14c-5.5 0-10 4.5-10 10 0 4.2 2.6 7.8 6.3 9.4L22 38h4l1.7-4.6C31.4 31.8 34 28.2 34 24c0-5.5-4.5-10-10-10z"/>
+              <path d="M18 26h12"/>
+            </svg>
+          </div>
+          <div class="terapia-body">
+            <span class="terapia-tag">Nutrición IV</span>
+            <h3>Sueroterapia</h3>
+            <p>Reposición de vitaminas, minerales y electrolitos vía intravenosa para revitalizar tu organismo desde adentro.</p>
+          </div>
+        </div>
+
+        <div class="terapia-card reveal delay-1" style="--c:#6366F1;--cb:rgba(99,102,241,.08)">
+          <div class="terapia-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="24" r="10"/>
+              <path d="M24 8v4M24 36v4M8 24h4M36 24h4"/>
+              <path d="M13 13l2.8 2.8M32.2 32.2l2.8 2.8M35 13l-2.8 2.8M15.8 32.2l-2.8 2.8"/>
+              <circle cx="24" cy="24" r="4" fill="currentColor" opacity="0.2"/>
+            </svg>
+          </div>
+          <div class="terapia-body">
+            <span class="terapia-tag">Oxigenación</span>
+            <h3>Ozonoterapia</h3>
+            <p>Terapia oxidativa que mejora la oxigenación celular, potencia el sistema inmune y acelera la recuperación.</p>
+          </div>
+        </div>
+
+        <div class="terapia-card reveal delay-2" style="--c:#9333EA;--cb:rgba(147,51,234,.08)">
+          <div class="terapia-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="24" cy="16" r="8"/>
+              <path d="M10 42c0-7.7 6.3-14 14-14s14 6.3 14 14"/>
+              <path d="M24 24v6M20 28l4 4 4-4"/>
+            </svg>
+          </div>
+          <div class="terapia-body">
+            <span class="terapia-tag">Regeneración</span>
+            <h3>PRP Capilar</h3>
+            <p>Plasma Rico en Plaquetas aplicado en el cuero cabelludo para estimular folículos y combatir la alopecia.</p>
+          </div>
+        </div>
+
+        <div class="terapia-card reveal" style="--c:#EC4899;--cb:rgba(236,72,153,.08)">
+          <div class="terapia-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 6C15.2 6 8 13.2 8 22c0 6.2 3.5 11.6 8.6 14.5L18 42h12l1.4-5.5C36.5 33.6 40 28.2 40 22c0-8.8-7.2-16-16-16z"/>
+              <path d="M18 22c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
+              <path d="M20 28h8"/>
+            </svg>
+          </div>
+          <div class="terapia-body">
+            <span class="terapia-tag">Anti-edad</span>
+            <h3>PRP Facial</h3>
+            <p>Rejuvenecimiento con factores de crecimiento propios: mejora textura, reduce arrugas y unifica el tono.</p>
+          </div>
+        </div>
+
+        <div class="terapia-card reveal delay-1" style="--c:#2563EB;--cb:rgba(37,99,235,.08)">
+          <div class="terapia-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="14" r="6"/>
+              <circle cx="30" cy="34" r="6"/>
+              <path d="M22 18l-2 4 4 8-2 4"/>
+              <path d="M26 30l-2-4 4-8-2-4"/>
+            </svg>
+          </div>
+          <div class="terapia-body">
+            <span class="terapia-tag">Ortopedia</span>
+            <h3>PRP Articular</h3>
+            <p>Regeneración de cartílagos y tendones mediante plasma concentrado en articulaciones dañadas.</p>
+          </div>
+        </div>
+
+        <div class="terapia-card reveal delay-2" style="--c:#059669;--cb:rgba(5,150,105,.08)">
+          <div class="terapia-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 8c0 0-12 10-12 20a12 12 0 0 0 24 0C36 18 24 8 24 8z"/>
+              <path d="M20 30c1 2 2.5 3 4 3"/>
+            </svg>
+          </div>
+          <div class="terapia-body">
+            <span class="terapia-tag">Inmunidad</span>
+            <h3>Autohemoterapia</h3>
+            <p>Reintroducción de sangre propia con ozono para estimular el sistema defensivo y mejorar la vitalidad.</p>
+          </div>
+        </div>
+
+        <div class="terapia-card reveal" style="--c:#D97706;--cb:rgba(217,119,6,.08)">
+          <div class="terapia-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 34l20-20"/>
+              <circle cx="32" cy="16" r="4"/>
+              <path d="M10 38l4-4"/>
+              <path d="M28 20l-14 14"/>
+              <circle cx="16" cy="32" r="3"/>
+            </svg>
+          </div>
+          <div class="terapia-body">
+            <span class="terapia-tag">Dermatología</span>
+            <h3>Cauterización de Verrugas</h3>
+            <p>Eliminación precisa y segura de verrugas con electrocauterización, sin cicatrices visibles.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="terapias-note reveal">
+        ¿No sabes cuál terapia es la indicada para ti?
+        <a href="#hero" class="scroll-to-form">Agenda tu valoración gratuita</a>
+        y te asesoramos sin costo.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIOS ── -->
+  <section class="section-testimonials" id="testimonios">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-lbl">Testimonios</span>
+        <h2 class="section-title">Lo que dicen nuestros pacientes</h2>
+        <p class="section-desc">Más de 500 personas han transformado su salud con nuestras terapias</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="test-card reveal">
+          <div class="test-quote-mark" aria-hidden="true">"</div>
+          <div class="test-stars" aria-label="5 estrellas">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="test-text">Llevaba meses con fatiga crónica y después de 3 sesiones de sueroterapia me siento completamente renovada. Angie explica cada paso con paciencia y profesionalismo.</p>
+          <div class="test-author">
+            <div class="test-avatar" style="--av:#0D9488">ML</div>
+            <div>
+              <p class="test-name">María López</p>
+              <p class="test-therapy">Sueroterapia · Ozonoterapia</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-card reveal delay-1">
+          <div class="test-quote-mark" aria-hidden="true">"</div>
+          <div class="test-stars" aria-label="5 estrellas">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="test-text">Noté menos caída desde la primera sesión de PRP capilar. El consultorio es limpio, el proceso es indoloro y los resultados hablan solos. Totalmente recomendado.</p>
+          <div class="test-author">
+            <div class="test-avatar" style="--av:#9333EA">CR</div>
+            <div>
+              <p class="test-name">Carlos Restrepo</p>
+              <p class="test-therapy">PRP Capilar</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-card reveal delay-2">
+          <div class="test-quote-mark" aria-hidden="true">"</div>
+          <div class="test-stars" aria-label="5 estrellas">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="test-text">Tenía artrosis en la rodilla y el PRP articular fue un antes y un después. Sin cirugía, sin anestesia general. La recuperación fue rápida y el dolor desapareció casi por completo.</p>
+          <div class="test-author">
+            <div class="test-avatar" style="--av:#2563EB">AP</div>
+            <div>
+              <p class="test-name">Andrea Palomino</p>
+              <p class="test-therapy">PRP Articular</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── POR QUÉ ELEGIRNOS ── -->
+  <section class="section-why">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-lbl why-lbl">Nuestra promesa</span>
+        <h2 class="section-title why-title">¿Por qué elegirnos?</h2>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card reveal">
+          <div class="why-icon-box">
+            <svg width="26" height="26" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 6l4.5 9 10 1.5-7.3 7 1.8 10L24 29l-9 4.5 1.8-10L9.5 16.5l10-1.5z"/>
+            </svg>
+          </div>
+          <h3>Experiencia Certificada</h3>
+          <p>Formación especializada y certificaciones internacionales en terapias biorreguladoras, avaladas por instituciones reconocidas.</p>
+        </div>
+
+        <div class="why-card reveal delay-1">
+          <div class="why-icon-box">
+            <svg width="26" height="26" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M24 6l-14 6v10c0 9 6.2 17.4 14 20 7.8-2.6 14-11 14-20V12z"/>
+              <path d="M18 24l4 4 8-8"/>
+            </svg>
+          </div>
+          <h3>Seguridad Garantizada</h3>
+          <p>Insumos estériles de un solo uso en ambiente clínico controlado que cumple las normas de bioseguridad vigentes.</p>
+        </div>
+
+        <div class="why-card reveal delay-2">
+          <div class="why-icon-box">
+            <svg width="26" height="26" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 36l8-10 6 6 10-14 8 10"/>
+              <rect x="6" y="10" width="36" height="26" rx="2"/>
+            </svg>
+          </div>
+          <h3>Resultados Comprobados</h3>
+          <p>Más de 500 pacientes han mejorado su calidad de vida con protocolos personalizados respaldados en evidencia científica.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA FINAL ── -->
+  <section class="section-cta-final">
+    <div class="container">
+      <div class="cta-final-inner reveal">
+        <span class="cta-badge">Valoración 100% gratuita</span>
+        <h2>¿Lista para transformar<br>tu salud?</h2>
+        <p>Sin compromiso. Respuesta en menos de 1 hora en horario de atención.</p>
+        <a href="#hero" class="btn-cta-final scroll-to-form">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Agendar mi cita ahora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
   <footer class="footer">
     <div class="container footer-inner">
-      <span class="footer-name">© 2025 Consultorio Angie Domínguez · Santa Marta</span>
-      <a href="https://instagram.com/angiedominguez" target="_blank" rel="noopener" class="footer-ig">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-          <circle cx="12" cy="12" r="4" />
-          <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
-        </svg>
-        @angiedominguez
-      </a>
+      <div class="footer-left">
+        <span class="footer-name">Consultorio Angie Domínguez</span>
+        <span class="footer-loc">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          Santa Marta, Colombia
+        </span>
+      </div>
+      <div class="footer-right">
+        <a href="https://instagram.com/angiedominguez" target="_blank" rel="noopener" class="footer-ig">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+          </svg>
+          @angiedominguez
+        </a>
+        <span class="footer-copy">© 2025 Todos los derechos reservados</span>
+      </div>
     </div>
   </footer>
 
@@ -211,8 +572,7 @@
   <a href="https://wa.me/3127071743" class="fab-wa" target="_blank" rel="noopener"
     aria-label="Escríbenos por WhatsApp">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path
-        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
     </svg>
   </a>
 
