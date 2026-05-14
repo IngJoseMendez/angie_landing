@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python \"C:\\\\Users\\\\Jose Pc\\\\.claude\\\\skills\\\\ui-ux-pro-max\\\\scripts\\\\search.py\" \"alternative medicine wellness seroterapy ozone therapy holistic health premium\" --design-system -p \"Angie Dominguez Consultorio\" -f markdown)",
+      "Bash(start index.html)",
+      "Bash(node -e ' *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(node -e \"const fs=require\\('fs'\\);try{new Function\\(fs.readFileSync\\('script.js','utf8'\\)\\);console.log\\('JS OK'\\)}catch\\(e\\){console.error\\(e.message\\)}\")",
+      "Bash(node -e \"console.log\\(require\\('fs'\\).readFileSync\\('index.html','utf8'\\).split\\('\\\\n'\\).length\\)\")",
+      "Bash(echo \"HTML lines: $\\(node -e \"console.log\\(require\\('fs'\\).readFileSync\\('index.html','utf8'\\).split\\('\\\\n'\\).length\\)\"\\)\")",
+      "Bash(node -e \"console.log\\(require\\('fs'\\).readFileSync\\('style.css','utf8'\\).split\\('\\\\n'\\).length\\)\")",
+      "Bash(echo \"CSS lines: $\\(node -e \"console.log\\(require\\('fs'\\).readFileSync\\('style.css','utf8'\\).split\\('\\\\n'\\).length\\)\"\\)\")"
+    ]
+  }
+}
